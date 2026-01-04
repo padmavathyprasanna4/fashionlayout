@@ -2,28 +2,28 @@ import React, { useState } from "react";
 import "./Shop.css";
 
 const products = [
-    { id: "p1", title: "Grand Frock", img: "fashionimages/homeimages/home3.jpg", price: 1250, oldPrice: 1400, rating: 5, reviews: 65 },
-    { id: "p2", title: "Gold Strap Watch", img: "fashionimages/homeimages/home4.jpg", price: 960, oldPrice: 1160, rating: 5, reviews: 65 },
-    { id: "p3", title: "American Diamond Earrings", img: "fashionimages/categoriesimages/category5.jpg", price: 799, oldPrice:999, rating: 5, reviews: 72 },
+    { id: "p1", title: "Grand Frock", img: "/fashionimages/homeimages/home3.jpg", price: 1250, oldPrice: 1400, rating: 5, reviews: 65 },
+    { id: "p2", title: "Gold Strap Watch", img: "/fashionimages/homeimages/home4.jpg", price: 960, oldPrice: 1160, rating: 5, reviews: 65 },
+    { id: "p3", title: "American Diamond Earrings", img: "/fashionimages/categoriesimages/category5.jpg", price: 799, oldPrice:999, rating: 5, reviews: 72 },
    
-    { id: "l2", title: "Stylish Handbag", img: "fashionimages/shopimages/shop3.jpg", price: 499, oldPrice: 1299, rating: 4, reviews: 37 },
-     { id: "c3", title: "Designer Pant-Shirt", img: "fashionimages/categoriesimages/category3.jpg", price: 1350, oldPrice: 1600, rating: 5, reviews: 72 },
-    { id: "n1", title: "Premium White Watch", img: "fashionimages/categoriesimages/category9.jpg", price: 1190, oldPrice: 1790, rating: 5, reviews: 88 },
+    { id: "l2", title: "Stylish Handbag", img: "/fashionimages/shopimages/shop3.jpg", price: 499, oldPrice: 1299, rating: 4, reviews: 37 },
+     { id: "c3", title: "Designer Pant-Shirt", img: "/fashionimages/categoriesimages/category3.jpg", price: 1350, oldPrice: 1600, rating: 5, reviews: 72 },
+    { id: "n1", title: "Premium White Watch", img: "/fashionimages/categoriesimages/category9.jpg", price: 1190, oldPrice: 1790, rating: 5, reviews: 88 },
 
-    { id: "p9", title: "Elegant Evening Gown", img: "fashionimages/categoriesimages/category2.jpg", price: 1960, oldPrice: 2160, rating: 5, reviews: 88 },
-    { id: "p10", title: "Antique Bangles", img: "fashionimages/homeimages/home6.jpg", price: 990, oldPrice: 1290, rating: 4, reviews: 60 },
-    { id: "p11", title: "Leather Watch", img: "fashionimages/categoriesimages/category12.jpg", price: 850, oldPrice: 999, rating: 4, reviews: 47 },
-    { id: "p12", title: "Pink Handbag", img: "fashionimages/shopimages/shop2.jpg", price: 450, oldPrice: 699, rating: 4, reviews: 33 },
+    { id: "p9", title: "Elegant Evening Gown", img: "/fashionimages/categoriesimages/category2.jpg", price: 1960, oldPrice: 2160, rating: 5, reviews: 88 },
+    { id: "p10", title: "Antique Bangles", img: "/fashionimages/homeimages/home6.jpg", price: 990, oldPrice: 1290, rating: 4, reviews: 60 },
+    { id: "p11", title: "Leather Watch", img: "/fashionimages/categoriesimages/category12.jpg", price: 850, oldPrice: 999, rating: 4, reviews: 47 },
+    { id: "p12", title: "Pink Handbag", img: "/fashionimages/shopimages/shop2.jpg", price: 450, oldPrice: 699, rating: 4, reviews: 33 },
 
-    { id: "p13", title: "Hip Belt", img: "fashionimages/categoriesimages/category8.jpg", price: 650, oldPrice: 850, rating: 5, reviews: 70 },
-    { id: "p14", title: "Designer Long Gown", img: "fashionimages/categoriesimages/category1.jpg", price: 2000, oldPrice: 2400, rating: 4, reviews: 55 },
-    { id: "p15", title: "Gold Plated Bangles", img: "fashionimages/categoriesimages/category7.jpg", price: 899, oldPrice: 1099, rating: 5, reviews: 90 },
+    { id: "p13", title: "Hip Belt", img: "/fashionimages/categoriesimages/category8.jpg", price: 650, oldPrice: 850, rating: 5, reviews: 70 },
+    { id: "p14", title: "Designer Long Gown", img: "/fashionimages/categoriesimages/category1.jpg", price: 2000, oldPrice: 2400, rating: 4, reviews: 55 },
+    { id: "p15", title: "Gold Plated Bangles", img: "/fashionimages/categoriesimages/category7.jpg", price: 899, oldPrice: 1099, rating: 5, reviews: 90 },
     { id: "p16", title: "Classic Half-Saree", img: "/fashionimages/categoriesimages/category4.jpg", price: 1500, oldPrice: 1950, rating: 4, reviews: 40 },
 
-     { id: "n3", title: "Gold Plated Watch", img: "fashionimages/categoriesimages/category11.jpg", price: 1190, oldPrice: 1490, rating: 4, reviews: 47 },
-    { id: "p18", title: "Blue Steel Watch", img: "fashionimages/categoriesimages/category10.jpg", price: 990, oldPrice: 1290, rating: 4, reviews: 37 },
-    { id: "p19", title: "Chocker Necksets", img: "fashionimages/homeimages/home5.jpg", price: 999, oldPrice: 1499, rating: 4, reviews: 28 },
-    { id: "p20", title: "Purple Grand Frock", img: "fashionimages/shopimages/shop1.jpg", price: 1799, oldPrice: 2999, rating: 5, reviews: 45 },
+     { id: "n3", title: "Gold Plated Watch", img: "/fashionimages/categoriesimages/category11.jpg", price: 1190, oldPrice: 1490, rating: 4, reviews: 47 },
+    { id: "p18", title: "Blue Steel Watch", img: "/fashionimages/categoriesimages/category10.jpg", price: 990, oldPrice: 1290, rating: 4, reviews: 37 },
+    { id: "p19", title: "Chocker Necksets", img: "/fashionimages/homeimages/home5.jpg", price: 999, oldPrice: 1499, rating: 4, reviews: 28 },
+    { id: "p20", title: "Purple Grand Frock", img: "/fashionimages/shopimages/shop1.jpg", price: 1799, oldPrice: 2999, rating: 5, reviews: 45 },
 ];
 
 function renderStars(rating) {
