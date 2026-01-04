@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
-import image1 from "/fashionimages/aboutimages/about1.jpg";
+import about1 from "/fashionimages/aboutimages/about1.jpg";
 
 export default function AboutUs() {
   return (
@@ -32,11 +32,7 @@ export default function AboutUs() {
           <div className="about-grid">
             {/* Left image */}
             <div className="about-image-wrap">
-              <img
-                src="image1"
-                alt="Hanvi Collections"
-                className="about-image"
-              />
+               <img  src={about1} alt="About Hanvi Collections" className="about-image" />
             </div>
 
             {/* Right text */}
