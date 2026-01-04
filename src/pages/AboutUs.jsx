@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./AboutUs.css";
 import about1 from "/fashionimages/aboutimages/about1.jpg";
 
+
 export default function AboutUs() {
   return (
     <div className="about-page">
