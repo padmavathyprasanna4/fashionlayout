@@ -12,28 +12,28 @@ export default function Cart() {
             name: "Gold Plated Bangles",
             price: 899,
             qty: 1,
-            img: "fashionimages/categoriesimages/category7.jpg",
+            img: "/fashionimages/categoriesimages/category7.jpg",
         },
         {
             id: 2,
             name: "Purple Grand Frock",
             price: 1799,
             qty: 1,
-            img: "fashionimages/shopimages/shop1.jpg", // change to your real image
+            img: "/fashionimages/shopimages/shop1.jpg", // change to your real image
         },
         {
             id: 3,
             name: "Kundan Stone Set",
             price: 1399,
             qty: 1,
-            img: "fashionimages/categoriesimages/category6.jpg",
+            img: "/fashionimages/categoriesimages/category6.jpg",
         },
         {
             id: 4,
             name: "Classic Half-Saree",
             price: 1500,
             qty: 1,
-            img: "fashionimages/categoriesimages/category4.jpg", // change to your real image
+            img: "/fashionimages/categoriesimages/category4.jpg", // change to your real image
         },
     ]);
 
