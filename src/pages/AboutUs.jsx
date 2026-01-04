@@ -52,7 +52,7 @@ export default function AboutUs() {
               </p>
 
               <p>
-                Hanvi Collection offers an exquisite range of jewelleries,dresses and
+                Hanvi Collection offers an exquisite range of jewellery,dresses and
                 fashion accessories including necklaces, earrings, bracelets, rings, and
                 custom-designed pieces. Whether you prefer classic gold,
                 contemporary silver, or sparkling gemstones, our collection
